@@ -30,7 +30,7 @@ export function generatePalette(starterPalette) {
 
 function getRange(hexColor) {
     return [
-        chroma(hexColor).brighten(3).hex(),
+        chroma(hexColor).brighten(1.8).hex(),
         hexColor,
         chroma(hexColor).darken(1.4).hex()
     ];
