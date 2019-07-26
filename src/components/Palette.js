@@ -3,10 +3,15 @@ import ColorBox from "./ColorBox";
 import "./Palette.css"
 
 class Palette extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { level: 500 };
+    };
 
     render() {
         const { colors } = this.props.palette;
-        const colorBoxes = colors.map(color => <ColorBox background={color.color} name={color.name} />);
+        const { level } = this.state;
+        const colorBoxes = colors[level].map(color => <ColorBox key={color.id} background={color.hex} name={color.name} />);
 
         return (
             <div className="Palette">
