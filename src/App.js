@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import Palette from "./components/Palette";
-import seedColors from "./assets/seedColors";
-import { generatePalette } from "./utils/color-helpers";
+import { BrowserRouter } from "react-router-dom";
+import RouterApp from "./routes/RouterApp";
 
 class App extends Component {
 
   render() {
-    console.log(generatePalette(seedColors[0]));
     return (
-      <Palette palette={generatePalette(seedColors[0])} />
+      <BrowserRouter>
+        <RouterApp />
+      </BrowserRouter>
     );
   };
-
 }
 
 export default App;
