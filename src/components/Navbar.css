@@ -2,7 +2,7 @@
   display: flex;
   align-self: center;
   justify-content: flex-start;
-  height: 50px;
+  height: 34px;
 }
 
 .logo {
@@ -52,4 +52,11 @@
   height: 13px;
   margin-left: -7px;
   margin-top: -3px;
+}
+
+.format-select {
+  margin-left: auto;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
 }
