@@ -21,7 +21,7 @@ const RouterApp = () => (
     <Switch>
       <PaletteListRoute path='/' exact={true} component={PalleteList} seedData={seedColors} />
       <PaletteRoute path='/palette/:id'
-        generatePalette={(props) => findAndGeneratePalette(props.match.params.id)}
+        generatePalette={(id) => findAndGeneratePalette(id)}
         component={Palette}
       />
     </Switch>
